@@ -8,7 +8,7 @@ test("GET / returns welcome message", async () => {
   const response = await request(app).get("/");
 
   assert.equal(response.status, 200);
-  assert.equal(response.body.message, "Hello from Express!");
+  assert.equal(response.body.message, "Hello Sir!");
   assert.equal(response.body.status, "success");
 });
 
