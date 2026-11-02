@@ -17,4 +17,10 @@ app.get("/health", (req, res) => {
   });
 });
 
+ap.get("/tes", (req,res) => {
+  res.status(200).json({
+    status: "tes success",
+  });
+})
+
 module.exports = app;
