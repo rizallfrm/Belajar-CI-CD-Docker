@@ -18,3 +18,10 @@ test("GET /health returns health check message", async () => {
   assert.equal(response.status, 200);
   assert.equal(response.body.status, "ok");
 });
+
+test("GET /test returns health check message", async () => {
+  const response = await request(app).get("/test");
+
+  assert.equal(response.status, 200);
+  assert.equal(response.body.status, "ok");
+});
